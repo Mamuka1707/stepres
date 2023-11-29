@@ -1,0 +1,28 @@
+<div class="products">
+  
+    <div class="food">
+      <div *ngFor="let value of products" class="salads">
+        <div class="Saladsinfo">
+          <img [src]="value.image" alt="" />
+          <div class="Saladsinfoin">
+            <h1>{{ value.name }}</h1>
+            <h2>{{ value.spiciness }}</h2>
+            <div class="nutsveg">
+              <h2>Nuts</h2>
+              <h2>Vegetarian</h2>
+            </div>
+  
+            <div class="pricebtn">
+              <button class="btn-53">
+                <div class="original">
+                  <h1>{{ value.price | currency : "USD" }}</h1>
+                </div>
+               
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
