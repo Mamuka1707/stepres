@@ -15,6 +15,8 @@ export class CartComponent implements OnInit {
       next: (data)=> {
         this.products = data
         console.log(this.products);
+        console.log(data);
+        
         
       },
       error: (error)=> {
